@@ -4,7 +4,7 @@ import styled from 'styled-components'
 function Sidebar() {
   return (
      <Main>
-
+         
      </Main>
   )
 }

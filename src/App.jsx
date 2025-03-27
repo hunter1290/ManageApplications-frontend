@@ -12,7 +12,13 @@ import Page404 from './pages/Page404'
 import "./index.scss";
 import Dashboard from "./pages/Dashboard";
 
+
+import store from "./redux/store";
+import {Provider} from "react-redux";
+
+
 const App = () => (
+  <Provider store={store}>
   <div className=" flex items-center justify-center min-h-screen">
     <Router>
       <Routes>
@@ -29,6 +35,7 @@ const App = () => (
     </Router>
    
   </div>
+  </Provider>
 );
 const rootElement = document.getElementById("app")
 if (!rootElement) throw new Error("Failed to find the root element")
